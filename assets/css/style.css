@@ -8,6 +8,7 @@
 
     /* Center and scale the image nicely */
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100%;
 }
 
@@ -19,3 +20,17 @@ h1 {
 p, h2 {
     font-family: 'Russo One', sans-serif;
 }
+
+.blink_text {
+
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+    }
+
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
