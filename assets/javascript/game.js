@@ -1,8 +1,8 @@
-var batWords = ["bruce", "wayne", "pennyworth", "scarecrow", "bane"];
+var batWords = ["bruce", "wayne", "pennyworth", "scarecrow", "bane", "joker", "batman", "alfred", "riddler", "gotham", "catwoman"];
 //Define vars
 var lettersGuessed = [];
 var lettersCorrect = [];
-var guessRemaining = 5;
+var guessRemaining = 7;
 var wins = 0;
 var losses = 0;
 var answerArray = [];
@@ -21,7 +21,7 @@ var letterGuessedText = document.getElementById("letterGuessedTextID");
 //Start game on click; This also selects computerGuess
 document.getElementById("directionTextID").addEventListener("click", function () {
     computerGuess = batWords[Math.floor(Math.random() * batWords.length)];
-    guessRemaining = 5;
+    guessRemaining = 7;
 
     for (var i = 0; i < computerGuess.length; i++) {
         answerArray[i] = " _ ";
@@ -88,7 +88,7 @@ document.onkeydown = function (event) {
 //Function to Reset the game
 function playAgain () {
     computerGuess = batWords[Math.floor(Math.random() * batWords.length)];
-    guessRemaining = 5;
+    guessRemaining = 7;
     answerArray = [];
     for (var i = 0; i < computerGuess.length; i++) {
         answerArray[i] = " _ ";
