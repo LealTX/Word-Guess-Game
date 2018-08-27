@@ -45,3 +45,11 @@ p, h2, h4 {
      50% { opacity: 0.0; }
      100% { opacity: 1.0; }
      }
+
+@media (min-width: 1200px)
+{
+    .container
+    {
+        max-width: 950px;
+    }
+}
